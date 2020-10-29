@@ -1,0 +1,159 @@
+*,*::before,*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+.carousel-item {
+    height: 90vh;
+    position: relative;
+}
+
+.backdrop {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, .7);
+}
+
+.dashboard-card {
+    object-fit: cover;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+}
+
+#contact {
+    background: linear-gradient(rgba(0, 142, 99, 0.1), rgba(0, 0, 0, 0.1)), url(./assets/call-to-action-bg.jpg) fixed center center;
+    padding: 100px 0;
+    background-size: cover;
+}
+
+.section-header h3 {
+    font-size: 2rem;
+    color: #111;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 700;
+    padding-bottom: 15px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section-header h3::before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 1px;
+    left: calc(50% - 60px);
+}
+
+.section-header h3::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #18d26e;
+    bottom: 0;
+    left: calc(50% - 20px);
+}
+
+.nav-link {
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+
+.nav-link:hover {
+    color: #18d26e;
+}
+
+.navbar-brand {
+    color: #fff;
+}
+
+.btn-custom {
+    background: #18d26e;
+    color: #fff;
+    margin: 10px;
+    transition: .5s;
+    border-radius: 50px;
+    padding: 8px 32px;
+    letter-spacing: 1px;
+    font-size: 1rem;
+    border: 1px solid #18d26e;
+    font-weight: 500;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: unset;
+    padding: 0;
+}
+
+.carousel-caption h5 {
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.about-text {
+    font-size: 1.25rem;
+    line-height: 1.5;
+}
+
+.carousel-caption p {
+    font-size: 2rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+#dashboard {
+    background: #f7f7f7;
+}
+
+.btn-custom:hover {
+    background: #fff;
+    color: #18d26e;
+    border: 1px solid #18d26e;
+}
+
+.btn-custom-secondary {
+    background: transparent;
+    border: 1px solid #fff;
+}
+
+.btn-custom-secondary:hover {
+    border: 1px solid #18d26e;
+    background: #18d26e;
+    color: #fff;
+}
+
+p,a,h5,h2,h3,span {
+    font-family: 'Poppins', sans-serif;
+}
+
+@media screen and (max-width: 1200px) {
+    .carousel-item {
+        height: unset;
+    }
+}
